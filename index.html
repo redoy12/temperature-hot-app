@@ -40,7 +40,7 @@
         document.getElementById('search').addEventListener('click',function(){
             const input = document.getElementById('input').value;
 
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q={input}&units=metric&appid={e41b90ab4bc6a60e5677e7d0aac24228}`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=e41b90ab4bc6a60e5677e7d0aac24228`)
             .then(res=>res.json())
             .then(data => {
                 console.log(data);
